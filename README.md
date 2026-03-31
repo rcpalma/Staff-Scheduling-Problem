@@ -3,7 +3,7 @@
 Nesse projeto pessoal, implementei no python usando gurobi/gurobipy o problema descrito no paper acima.
 
 ## Descrição
-O problema Staff Scheduling consiste em atribuir turnos a empregados durante um horizonte de planejamento satisfazendo um conjunto de restrições operacionais e regulatorias.
+O problema Staff Scheduling consiste em atribuir turnos a funcionários durante um horizonte de planejamento satisfazendo um conjunto de restrições operacionais e regulatorias.
 
 ## Instâncias
 O paper disponibiliza 20 instâncias construídas a partir de dados reais.  **Apenas as primeiras 10 instâncias estão incluídas neste repositório**
@@ -26,11 +26,11 @@ O paper disponibiliza 20 instâncias construídas a partir de dados reais.  **Ap
 
 Dois gráficos são gerados ao executar main.py
 
-**Primeiro - Mapa das atribuições:** Heatmap com os empregados no eixo y e o horizonte de planejamento no eixo x. Cada célula representa o turno atribuído ao empregado naquele dia. 
+**Primeiro - Mapa das atribuições:** Heatmap com os funcionários no eixo y e o horizonte de planejamento no eixo x. Cada célula representa o turno atribuído ao funcionário naquele dia. 
 <img width="1923" height="700" alt="mapa_calor" src="https://github.com/user-attachments/assets/e82d0d05-40b6-4684-a3c9-683bea0115e1" />
 
 
-**Segundo - Grafico de Cobertura diária:** Barplot com a quantidade de empregados ativos por dia.
+**Segundo - Grafico de Cobertura diária:** Barplot com a quantidade de funcionários ativos por dia.
 <img width="1200" height="800" alt="Cobertura" src="https://github.com/user-attachments/assets/9099e7b4-19b5-4b7a-91c1-3d952171db7b" />
 
 ## Como usar
@@ -50,6 +50,12 @@ Exemplo: python main.py 3
 pip install -r requirements.txt
 ```
 
+## Demo - Interface Web
+A API foi desenvolvida com **FastAPI** e **Uvicorn** (Python), com ajuda de **IA**.
+A interface web foi construída com **JavaScript** e **React**, permitindo selecionar a instância e visualizar a solução de forma interativa 
+no browser.
+
+![NSP](https://github.com/user-attachments/assets/83e427af-2c6b-42f6-a7bc-2c916d5170ed)
 
 
 
