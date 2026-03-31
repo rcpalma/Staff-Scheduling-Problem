@@ -1,6 +1,6 @@
 # Staff Scheduling Problem do paper: https://www.schedulingbenchmarks.org/papers/computational_results_on_new_staff_scheduling_benchmark_instances.pdf
 
-Nesse projeto pessoal, implementei no python usando gurobi/gurobipy o problema descrito no paper acima.
+Nesse projeto pessoal, utilizei Python e a biblioteca gurobipy para modelar e resolver o problema de staff scheduling (NSP) descrito no paper acima. Criei também duas visualizações para melhor interpretabilidade da solução.
 
 ## Descrição
 O problema Staff Scheduling consiste em atribuir turnos a funcionários durante um horizonte de planejamento satisfazendo um conjunto de restrições operacionais e regulatorias.
