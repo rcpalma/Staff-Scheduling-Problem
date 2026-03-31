@@ -64,22 +64,11 @@ def plot_grid(x):
     plt.ylabel("Funcionários", fontsize=12, fontweight='bold')
     
     plt.tight_layout()
-    plt.show()
+    plt.savefig('escala.png')
 
-
-
-
-# import matplotlib.pyplot as plt
-# import numpy as np
 
 
 def plot_bar(x, u_dt):
-    """
-    Plota um gráfico de barras comparando os funcionários alocados com a demanda (u_dt).
-    
-    :param x: Dicionário do Gurobi com chaves (employee, day, shift) e valor 0 ou 1.
-    :param u_dt: Dicionário com chaves (day, shift) e valor inteiro (demanda).
-    """
     
     # 1. Extrai dias e turnos únicos das chaves dos dicionários
     days = sorted(list(set([chave[1] for chave in x.keys()])))
@@ -147,7 +136,8 @@ def plot_bar(x, u_dt):
         ax.legend(handles=legend_elements, loc='upper right', bbox_to_anchor=(1.15, 1))
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig('cobertura.png')
+
 
 
 

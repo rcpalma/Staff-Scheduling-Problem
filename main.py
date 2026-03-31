@@ -22,6 +22,7 @@ def run_project(n_instancia):
     print(f" Fase 4: Gerando gráficos")
     plot_grid(x_val)
     plot_bar(x_val, u_dt)
+    plt.show()
 
 if __name__ == "__main__":
     instancia = int(sys.argv[1]) if len(sys.argv) > 1 else 5
